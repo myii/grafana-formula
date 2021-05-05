@@ -1,0 +1,184 @@
+= Changelog
+
+:sectnums!:
+
+== link:++https://github.com/saltstack-formulas/grafana-formula/compare/v3.1.1...v3.1.2++[3.1.2^] (2020-12-16)
+
+=== Bug Fixes
+
+* *libtofs:* “files_switch” mess up the variable exported by “map.jinja”
+ [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/6c0f0c84e5c5f8a5d2ef36c2e0b3406aef099f2f[6c0f0c8^])
+* *release.config.js:* use full commit hash in commit link [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/9df679f91699605780fd25a2a48595b9babdcc3b[9df679f^])
+
+=== Continuous Integration
+
+* *gemfile:* restrict `train` gem version until upstream fix [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/7b44328a7c2f408c09b312474834595edcffe5c0[7b44328^])
+* *gemfile.lock:* add to repo with updated `Gemfile` [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/492040ccba1008fe63fea6ded3c33c83b8ee927a[492040c^])
+* *gitlab-ci:* use GitLab CI as Travis CI replacement
+(https://github.com/saltstack-formulas/grafana-formula/commit/c477cb4bcede0725ae10e76b185238e51fdd7600[c477cb4^])
+* *kitchen:* avoid using bootstrap for `master` instances [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/5447dce0013507a47471fe9c163e6467f896681f[5447dce^])
+* *kitchen:* use `debian-10-master-py3` instead of `develop` [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/e5c31efe0a7337bd82285cb6485e457059386fa3[e5c31ef^])
+* *kitchen:* use `develop` image until `master` is ready (`amazonlinux`)
+ [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/a48fb76ab01897de01b76b4b3c8b0b53e7b415dd[a48fb76^])
+* *kitchen:* use `saltimages` Docker Hub where available [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/84be8c87f915d2e9e22b5fa1e1119cde0d6ea63b[84be8c8^])
+* *kitchen+travis:* remove `master-py2-arch-base-latest` [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/dd1afc48fef462b9476f10839c512712f2d7f05a[dd1afc4^])
+* *kitchen+travis:* upgrade matrix after `2019.2.2` release [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/8581213c8ffc826e3cb15e6fbe29029ed6646968[8581213^])
+* *pre-commit:* add to formula [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/39d58b2e21a96231cdc4e05a406dea0378f93409[39d58b2^])
+* *pre-commit:* enable/disable `rstcheck` as relevant [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/40e0abcf2998f82169b51b361021fa4c70c35d06[40e0abc^])
+* *pre-commit:* finalise `rstcheck` configuration [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/01751a1c4442d7156eab6f3bf2efbeae3dd3f0d4[01751a1^])
+* *travis:* add notifications => zulip [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/819c5f107df7c8393f7749fe8d87685af2fdcbf6[819c5f1^])
+* *travis:* apply changes from build config validation [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/c707a829d4860fe0c6be31840ff82bd68d3ad91b[c707a82^])
+* *travis:* opt-in to `dpl v2` to complete build config validation [skip
+ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/a6bd9d6ad32c1fe6bfa1652a7a625732c5a203d5[a6bd9d6^])
+* *travis:* quote pathspecs used with `git ls-files` [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/fb8d1389fa974824973917d937006c4ca53c9b88[fb8d138^])
+* *travis:* run `shellcheck` during lint job [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/0505c9d84706d5265ac6a8781d4422cf18e578e9[0505c9d^])
+* *travis:* update `salt-lint` config for `v0.0.10` [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/8e79a7b2683bd3bf8d430a6ced49a659a0ad4e5e[8e79a7b^])
+* *travis:* use `major.minor` for `semantic-release` version [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/dcc6545bea6241e34af2c34da2f56914764be74a[dcc6545^])
+* *travis:* use build config validation (beta) [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/21c71cee47dc789be64fdeecf80aefef6e3c8155[21c71ce^])
+* *workflows/commitlint:* add to repo [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/168ac4c54761e4d86cb88264f818c984a7fa70bf[168ac4c^])
+* merge travis matrix, add `salt-lint` & `rubocop` to `lint` job
+(https://github.com/saltstack-formulas/grafana-formula/commit/2558fe52350026ad2281f817aad00ee0f2ee5d4d[2558fe5^])
+
+=== Documentation
+
+* *contributing:* remove to use org-level file instead [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/3bf1dea99e16cc80bbb44e7a5e740b4f8d3dc1ca[3bf1dea^])
+* *readme:* update link to `CONTRIBUTING` [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/de3948b281c67077fdd27fe2b22f4a8ff299fc79[de3948b^])
+
+=== Performance Improvements
+
+* *travis:* improve `salt-lint` invocation [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/0ea000ed00df2127dd692fedf13d4fd6afb62307[0ea000e^])
+
+=== Styles
+
+* *libtofs.jinja:* use Black-inspired Jinja formatting [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/641bafa10ae45af0cbe0b7b69a315bdaec00c183[641bafa^])
+
+== link:++https://github.com/saltstack-formulas/grafana-formula/compare/v3.1.0...v3.1.1++[3.1.1^] (2019-10-10)
+
+=== Bug Fixes
+
+* *grafana.ini.jinja:* fix `salt-lint` errors
+(https://github.com/saltstack-formulas/grafana-formula/commit/909a3e6[909a3e6^])
+* *install.sls:* fix `salt-lint` errors
+(https://github.com/saltstack-formulas/grafana-formula/commit/4496044[4496044^])
+* *install.sls:* fix `salt-lint` errors
+(https://github.com/saltstack-formulas/grafana-formula/commit/dcb6ed7[dcb6ed7^])
+
+=== Continuous Integration
+
+* *kitchen:* change `log_level` to `debug` instead of `info`
+(https://github.com/saltstack-formulas/grafana-formula/commit/008d465[008d465^])
+* *kitchen:* install required packages to bootstrapped `opensuse` [skip
+ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/6b84248[6b84248^])
+* *kitchen:* use bootstrapped `opensuse` images until `2019.2.2` [skip
+ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/7d0281a[7d0281a^])
+* *kitchen+travis:* replace EOL pre-salted images
+(https://github.com/saltstack-formulas/grafana-formula/commit/2caa46b[2caa46b^])
+* *platform:* add `arch-base-latest` (commented out for now) [skip ci]
+(https://github.com/saltstack-formulas/grafana-formula/commit/22d624b[22d624b^])
+* *yamllint:* add rule `empty-values` & use new `yaml-files` setting
+(https://github.com/saltstack-formulas/grafana-formula/commit/8f2ba08[8f2ba08^])
+* merge travis matrix, add `salt-lint` & `rubocop` to `lint` job
+(https://github.com/saltstack-formulas/grafana-formula/commit/fb65280[fb65280^])
+* use `dist: bionic` & apply `opensuse-leap-15` SCP error workaround
+(https://github.com/saltstack-formulas/grafana-formula/commit/85b69bb[85b69bb^])
+
+== link:++https://github.com/saltstack-formulas/grafana-formula/compare/v3.0.1...v3.1.0++[3.1.0^] (2019-08-17)
+
+=== Features
+
+* *yamllint:* include for this repo and apply rules throughout
+(https://github.com/saltstack-formulas/grafana-formula/commit/62d6663[62d6663^])
+
+== link:++https://github.com/saltstack-formulas/grafana-formula/compare/v3.0.0...v3.0.1++[3.0.1^] (2019-07-25)
+
+=== Bug Fixes
+
+* *macro:* remove unused 'concat_args' macro
+(https://github.com/saltstack-formulas/grafana-formula/commit/31f5863[31f5863^])
+
+=== Continuous Integration
+
+* *kitchen+travis:* modify matrix to include `develop` platform
+(https://github.com/saltstack-formulas/grafana-formula/commit/fe779ca[fe779ca^])
+
+== link:++https://github.com/saltstack-formulas/grafana-formula/compare/v2.0.0...v3.0.0++[3.0.0^] (2019-06-23)
+
+=== Features
+
+* *alternatives:* add linux alternatives support
+(https://github.com/saltstack-formulas/grafana-formula/commit/0b05c5d[0b05c5d^])
+* *archives:* introduce support for archive files
+(https://github.com/saltstack-formulas/grafana-formula/commit/e7a1523[e7a1523^])
+
+=== Tests
+
+* *fixes:* fix two kitchen test failures
+(https://github.com/saltstack-formulas/grafana-formula/commit/4447f32[4447f32^])
+* *inspec:* expand unit tests for archives
+(https://github.com/saltstack-formulas/grafana-formula/commit/27bc326[27bc326^])
+
+=== BREAKING CHANGES
+
+* *archives:* the parameter `pkg` is now a dictionary. References to
+`template.pkg` should be changed to `template.pkg.name`.
+
+== link:++https://github.com/saltstack-formulas/grafana-formula/compare/v1.1.1...v2.0.0++[2.0.0^] (2019-06-23)
+
+=== Features
+
+* *repository:* support rpm-based linux distros
+(https://github.com/saltstack-formulas/grafana-formula/commit/ded3157[ded3157^])
+
+=== BREAKING CHANGES
+
+* *repository:* the parameter `pkg` is now a dictionary. References to
+`grafana.pkg` should be changed to `grafana.pkg.name`.
+
+== link:++https://github.com/saltstack-formulas/grafana-formula/compare/v1.1.0...v1.1.1++[1.1.1^] (2019-06-23)
+
+=== Bug Fixes
+
+* *macos:* fix service name on macos
+(https://github.com/saltstack-formulas/grafana-formula/commit/f28d08b[f28d08b^])
+
+== link:++https://github.com/saltstack-formulas/grafana-formula/compare/v1.0.0...v1.1.0++[1.1.0^] (2019-06-05)
+
+=== Features
+
+* *macos:* basic package and group handling
+(https://github.com/saltstack-formulas/grafana-formula/commit/bda2a7c[bda2a7c^])
+
+== 1.0.0 (2019-05-06)
+
+=== Features
+
+* *grafana-formula:* based on template-formula
+(https://github.com/alxwr/grafana-formula/commit/bd466a1[bd466a1^])

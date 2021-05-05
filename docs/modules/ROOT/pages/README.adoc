@@ -1,0 +1,83 @@
+= grafana-formula
+
+https://travis-ci.com/saltstack-formulas/grafana-formula[image:https://travis-ci.com/saltstack-formulas/grafana-formula.svg?branch=master[Travis CI Build Status]]
+https://github.com/semantic-release/semantic-release[image:https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg[Semantic Release]]
+
+Manage Grafana.
+
+== General notes
+
+See the full
+https://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html[SaltStack
+Formulas installation and usage instructions].
+
+If you want to use this formula, please pay attention to the `FORMULA`
+file and/or `git tag`, which contains the currently released version.
+This formula is versioned according to http://semver.org/[Semantic
+Versioning].
+
+See
+https://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html#versioning[Formula
+Versioning Section] for more details.
+
+== Contributing to this repo
+
+*Commit message formatting is significant!!*
+
+Please see
+xref:main::CONTRIBUTING.adoc[How
+to contribute] for more details.
+
+== Available states
+
+=== `grafana`
+
+_Meta-state (This is a state that includes other states)_.
+
+This installs the grafana package, manages the grafana configuration
+file and then starts the associated grafana service.
+
+=== `grafana.package`
+
+This state will install the grafana package only.
+
+=== `grafana.archive`
+
+This state will install the grafana software from archive file only.
+
+=== `grafana.config`
+
+This state will configure the grafana service and has a dependency on
+`grafana.install` via include list.
+
+=== `grafana.service`
+
+This state will start the grafana service and has a dependency on
+`grafana.config` via include list.
+
+=== `grafana.clean`
+
+_Meta-state (This is a state that includes other states)_.
+
+this state will undo everything performed in the `grafana` meta-state in
+reverse order, i.e. stops the service, removes the configuration file
+and then uninstalls the package.
+
+=== `grafana.service.clean`
+
+This state will stop the grafana service and disable it at boot time.
+
+=== `grafana.config.clean`
+
+This state will remove the configuration of the grafana service and has
+a dependency on `grafana.service.clean` via include list.
+
+=== `grafana.package.clean`
+
+This state will remove the grafana package and has a depency on
+`grafana.config.clean` via include list.
+
+=== `grafana.archive.clean`
+
+This state will uninstall grafana software from archive extracted
+directory.
